@@ -32,7 +32,9 @@ However, I soon realised that this was unlikely the case to get the flag. The hi
 $ samdump2 system SAM
 ```
 
-which extracts the strings from the SAM hive to a human readable colon demarcated string of hashes of the users on the system.
+which extracts the strings from the SAM hive to a human readable colon demarcated string of hashes of the users on the system. We get these as a result.
+
+![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Forensics%20-%20Closed%20Creds/creds.png)
 
 Thereafter, I proceeded to crack the hashes using https://crackstation.net/ since I was lazy lol... They could probably be cracked with JohnTheRipper and other tools like hashcat but I preferred a GUI-based cracker at this point of the competition. After removing the colons (which demarkate the 2 different hashes), I was able to get the flag from the second hash, which I just needed to wrap in the format. 
 
