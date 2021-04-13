@@ -6,6 +6,10 @@ You’re attempting to find sensitive information on a villain organization’s 
 
 [Link](http://www.jerseyctf.net)
 
+## Requirements
+* Burp Suite Community/Professional
+* Patience
+
 
 ### Approach
 
@@ -29,11 +33,11 @@ Forwarding the traffic once more we get a `c` - wow! I was starting to think we 
 
 Tried to enter this but sadly got rejected. I thought maybe I mistyped something and went back to triple check. Then I asked for tech support thinking that there was some typo lol!
 
-So the support guy gave me some clues that unexpectedly helped me figure out what to use (but he never heard of it himself!)
+So the support guy gave me some clues that unexpectedly helped me figure out what to use (but he never heard of it himself apparently!)
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/convo.png)
 
-After he said `The last part is cut off! Perhaps, you need to extend the your redirects.` I got an idea--to use burp repeater. So for every response given, I edited the letter behind the `GET /`. Take not you will want to have a notepad at this point to document all the characters output.
+After he said `The last part is cut off! Perhaps, you need to extend the your redirects.` I got an idea--to use burp repeater. So for every response given, I edited the letter behind the `GET /`. Take not you will want to have a notepad at this point to document all the characters output as they will **not** be shown in the HTTP History tab.
 
 We will first send any one of the response with a character to the Repeater Tab.
 
@@ -49,6 +53,10 @@ Ok now we have some response with another character - `r`. Now what we need to d
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-go3.png)
 
-After we reach the end of the flag format (character `}`, we will want to stop. This finally lead to the flag.
+After we reach the end of the flag format (character `}`, we will want to stop. This finally lead to the flag (we can now stop here!): `jctf{y0u_l1kEmY-Redir3CTs}`.
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-stop.png)
+
+## Reflection
+
+This was a rather meaningful challenge which reinforced my understanding of redirects and the use of burp repeater and burp as a whole, an invaluable tool for web-app pentesting.
