@@ -4,7 +4,7 @@ _200 points, 76 solves_
 
 You’re attempting to find sensitive information on a villain organization’s website, however, you are not having much luck. You notice that the site uses a lot of redirects, with some information on those redirect pages. However, you cannot inspect that information quick enough before you are redirected.
 
-[Link](www.jerseyctf.net)
+[Link](http://www.jerseyctf.net)
 
 
 ### Approach
