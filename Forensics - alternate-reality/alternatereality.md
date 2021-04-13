@@ -1,6 +1,6 @@
 ## alternate-reality
 
-_400 points, X solves_
+_400 points, 31 solves_
 
 **Challenged by SpecterOps**
 
