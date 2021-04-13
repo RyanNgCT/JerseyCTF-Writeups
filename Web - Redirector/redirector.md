@@ -53,7 +53,7 @@ Ok now we have some response with another character - `r`. Now what we need to d
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-go3.png)
 
-After we reach the end of the flag format (character `}`, we will want to stop. This finally lead to the flag (we can now stop here!): `jctf{y0u_l1kEmY-Redir3CTs}`.
+After we reach the end of the flag format (character `}`), we will want to stop since we already get the entire format out. This finally lead to the flag (we can now stop here!): `jctf{y0u_l1kEmY-Redir3CTs}`.
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-stop.png)
 
