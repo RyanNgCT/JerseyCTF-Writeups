@@ -4,7 +4,7 @@ _200 points, 30 solves_
 
 The clues from the camera led you to a mysterious building. Surprisingly, the front door was left unlocked. Unsurprisingly, the computer in the headquarters was not left unlocked. Using the registry files provided, will you be able to crack the password of the Administrator user?
 
-[Files]()
+[Files](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Forensics%20-%20Closed%20Creds/closed-creds.7z)
 
 ### Requirements
 * Kali Linux (includes regripper, samdump2) OR;
