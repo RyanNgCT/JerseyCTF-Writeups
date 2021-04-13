@@ -40,7 +40,7 @@ So the support guy gave me some clues that unexpectedly helped me figure out wha
 
 After he said `The last part is cut off! Perhaps, you need to extend the your redirects.` I got an idea--to use burp repeater. So for every response given, I edited the letter behind the `GET /`. Take not you will want to have a notepad at this point to document all the characters output as they will **not** be shown in the HTTP History tab.
 
-We will first send any one of the response with a character to the Repeater Tab.
+We will first send any one of the **responses** with a character to the Repeater Tab (when you right click all of the content will be sent).
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/send2repeater.png)
 
