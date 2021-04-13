@@ -8,6 +8,7 @@ You’re attempting to find sensitive information on a villain organization’s 
 
 ### Requirements
 * Burp Suite Community/Professional
+* FoxyProxy (optional for easy toggling between proxies). Set up: https://medium.com/@futaacmcyber/setting-up-burpsuite-for-your-web-penetration-testing-1657fa670304
 * Patience
 
 
