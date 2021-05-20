@@ -58,7 +58,7 @@ After we reach the end of the flag format (character `}`), we will want to stop 
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-stop.png)
 
-If the characters were say url encoded (say in a new challenge), we could simply use the same method by url encode the ending character (i.e `}` to `%7D`, using the same logic to stop when we get the entire valid string.
+If the characters were say url encoded (say in a new challenge), we could simply use the same method by url encode the ending character (i.e `}` to `%7D`), using the same logic to stop when we get the entire valid string.
 
 ## Reflection
 
