@@ -38,7 +38,7 @@ So the support guy gave me some clues that unexpectedly helped me figure out wha
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/convo.png)
 
-After he said `The last part is cut off! Perhaps, you need to extend the your redirects.` I got an idea--to use burp repeater. So for every response given, I edited the letter behind the `GET /`. Take not you will want to have a notepad at this point to document all the characters output as they will **not** be shown in the HTTP History tab.
+After he said `The last part is cut off! Perhaps, you need to extend the your redirects.` I got an idea--to use burp repeater. So for every response given, I edited the letter behind the `GET /`. Take note that you will want to have a notepad at this point to document all the characters output as they will **not** be shown in the HTTP History tab.
 
 We will first send any one of the **responses** with a character to the Repeater Tab (when you right click all of the content will be sent).
 
@@ -48,7 +48,7 @@ We then hit `Go` to send the request manually, since the web browser way didn't 
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-go.png)
 
-Ok now we have some response with another character - `r`. Now what we need to do is replace `i`, which was our initial request with `r` (the next request). i.e. the previous response will become the next request... you get the idea
+Ok now we have some response with another character - `r`. Now what we need to do is replace `i`, which was our initial request, with `r` (the next request). i.e. the previous response will become the next request... you get the idea
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-go2.png)
 
@@ -57,6 +57,8 @@ Ok now we have some response with another character - `r`. Now what we need to d
 After we reach the end of the flag format (character `}`), we will want to stop since we already get the entire format out. This finally lead to the flag (we can now stop here!): `jctf{y0u_l1kEmY-Redir3CTs}`.
 
 ![img](https://github.com/RyanNgCT/JerseyCTF-Writeups/blob/main/Web%20-%20Redirector/repeater-stop.png)
+
+If the characters were say url encoded (say in a new challenge), we could simply use the same method by url encode the ending character (i.e `}` to `%7D`, using the same logic to stop when we get the entire valid string.
 
 ## Reflection
 
